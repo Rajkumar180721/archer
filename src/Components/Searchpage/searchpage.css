@@ -1,0 +1,68 @@
+.searchBoxContainer {
+    display: flex;
+    height: 40px;
+    background-color: #272727;
+    padding: 10px 25px;
+    border-radius: 30px;
+    margin: 0px 25px;
+    user-select: none;
+    cursor: pointer;
+    position: sticky !important;
+    top: 80px !important;
+    z-index: 99;
+}
+
+#lensimge {
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    margin-top: 3px;
+    margin-right: 10px;
+    user-select: none;
+    opacity: .5;
+}
+
+#searchField {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 26px;
+    width: 100%;
+    outline: none;
+    font-weight: 300;
+}
+
+#searchField:focus { font-weight: 300; }
+
+
+.search-results-songimg {
+    border-radius: 8px;
+    opacity: 1;
+    margin-right: 10px;
+    user-select: none;
+}
+
+.search-results {
+    text-decoration: none;
+    height: 40px;
+    width: 100%;
+    padding: 0px;
+    margin-left: 5%;
+    outline: none;
+    user-select: none;
+    background-color: transparent;
+}
+
+.search-results p {
+    margin: 0px;
+    user-select: none;
+}
+
+.highlight {
+    color: yellow;
+}
+/* 
+.search-results:active {
+    background-color: rgb(83, 83, 83);
+    border-radius: 10px;
+} */

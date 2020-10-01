@@ -1,0 +1,48 @@
+
+#currentWindow {
+    font-size: 40px;
+    top: 0px;
+    color:#dadce0;
+    margin: 20px 65px;
+    font-weight: bold;
+    user-select: none;
+    z-index: 999;
+}
+
+#rightpanel {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+  }
+  
+.splitUp {
+  top:0;
+  position: fixed;
+  height: calc(100% - 110px);
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  user-select: none;
+}
+
+.splitUp::-webkit-scrollbar {
+  width: 0px;  
+  background: transparent;  
+  height: 0px;
+  
+  }
+  
+.splitUp::-webkit-scrollbar-thumb {
+width: 0px;
+background: #444444;
+}
+
+.splitDown {
+  position: fixed;
+  height: 110px;
+  width: 100%;
+  bottom: 0px;
+}

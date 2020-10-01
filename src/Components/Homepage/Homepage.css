@@ -1,0 +1,160 @@
+
+
+.madeforyou{
+    color:#dadce0;
+    font-size: 25px;
+    user-select: none;
+    margin: 30px 0px 10px 65px;
+}
+hr {
+    width: 98%;
+    opacity: .3;
+}
+
+#playlistContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 250px));
+    row-gap: 20px;
+    column-gap: 20px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 50px;
+    overflow: hidden;
+}
+
+.playlist-icon {
+    background-color: 'white';
+    border-radius: '50%';
+    border: '1px solid';
+    margin: '0px 8px';
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.playlists {
+    color: #dadce0;
+    font-size: 2rem;
+    font-weight: 300;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background-color .3s;
+
+}
+
+.playlists:hover {
+    background-color: #444444;
+    transition: background-color .3s;
+}
+
+.madeForYouContainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.madeForYou {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 270px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    margin: 30px 40px 0px 40px;
+    scrollbar-width: thin;
+    scrollbar-color: #444444 transparent;
+}
+.madeForYou::-webkit-scrollbar {
+    width: 0px;  
+    background: transparent;  
+    height: 5px;
+
+}
+
+.madeForYou::-webkit-scrollbar-thumb {
+    background: #444444;
+    height: 5px;
+    border-radius: 50px;
+}
+
+.scroll-left, .scroll-right {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid white;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.scroll-left {
+    transform: rotate(180deg);
+    left: 1%;
+    top: 35%;
+}
+
+.scroll-right {
+    right: 1%;
+    top: 35%;
+}
+
+.box {
+    position: relative;
+    height: 100%;
+    width: 180px;
+    border: 0px solid black;
+    margin: 0px 40px;
+    cursor: pointer;
+}
+
+
+
+
+.song-picture {
+    border: 0px solid;
+    border-radius: 10px;
+    height: 200px;
+    width: 180px;
+}
+
+.song-picture:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 10px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 10px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 10px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 10px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.song-picture:active {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 0px 0px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 0px 0px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 0px 0px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 0px 0px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.empty-picture {
+    position: relative;
+    height: 100%;
+    width: 180px;
+    border: 0px solid black;
+    margin: 0px 40px;
+    cursor: default;
+}
+
+.songInfo {
+    position: absolute;
+    color: #dadce0;
+    width: 100%;
+    text-align: left;
+    padding-left: 8px;
+    margin: 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+.songInfo > h4 {
+    margin: 10px;
+}

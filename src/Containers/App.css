@@ -1,0 +1,91 @@
+
+.split {
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    overflow: hidden;
+  }
+
+  .left {
+    left: 0px;
+    margin-left: 3px;
+    background-color: black;
+  }
+
+  .right {
+      right: 0px;
+      height: calc(100% - 130px);
+      background-color: #1e1e1e;
+  }
+
+  #notification-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: calc(50% - 200px);
+    bottom: auto;
+    margin-top: -100px;
+    background-color: #3e3e3e;
+    color: #dadce0;
+    font-size: 20px;
+    height: 40px;
+    width: 400px;
+    border-radius: 5px;
+    z-index: 9999;
+    opacity: 1;
+    transition: margin .3s;
+    padding: 10px 0px;
+  }
+  
+  #cancel-notification {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    right: 10px;
+  }
+
+  #confirmLogout-popup {
+    opacity: 0;
+    display: none;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 125px);
+    width: 300px;
+    height: 150px;
+    background-color: #dadce0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    z-index: 99;
+  }
+  #confirmLogout-popup > div {
+    position: absolute;
+    user-select: none;
+    right: 5%;
+    left: auto;
+    bottom: 15%;
+  }
+
+  #confirmLogout-popup > div > span {
+    margin: 0px 5px;
+  }
+  
+  #confirmLogout-popup > div > span:hover {
+    opacity: .5;
+    cursor: pointer;
+  }
+  
+
+#disk-background {
+  background-image: radial-gradient(#4e4d4d, black);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
+}

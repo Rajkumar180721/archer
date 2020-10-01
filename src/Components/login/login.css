@@ -1,0 +1,53 @@
+
+.main {
+    display: flex;
+    align-items: flex-start;
+    width: 500px;
+    height: 680px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10%;
+    color: #dadce0 !important;
+    border-radius: 2px;
+    border: 1px solid #dadce0;
+}
+
+.center {
+    justify-content: center;
+    
+}
+.form {
+    justify-content: left;
+}
+
+.sign-in-input {
+    height: 30px;
+    width: 400px;
+    font-size: 18px;
+    border: 0px solid white;
+    outline: none;
+    padding: 0px 10px;
+    background-color: transparent;
+    border-bottom-width: 1px;
+    color: #dadce0;
+}
+#signin {
+    margin: 20px 0px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+#signin span {
+    cursor: pointer;
+}
+
+#signin span:hover{
+    /* font-size: 18px; */
+    opacity: 0.4;
+    transition: opacity .15s ease-in;
+    transition-property: opacity;
+    transition-duration: 0.1s;
+    transition-timing-function: cubic-bezier(1, -0.13, 1, 1);
+    transition-delay: 0s;
+}
