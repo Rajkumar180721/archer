@@ -21,7 +21,7 @@
   "homepage": "https://github.com/Rajkumar180721/archer.git",
   "description": "",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
