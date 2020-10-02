@@ -11,14 +11,6 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Rajkumar180721/archer.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Rajkumar180721/archer.git"
-  },
-  "homepage": "https://github.com/Rajkumar180721/archer.git",
   "description": "",
   "scripts": {
     "start": "react-scripts start",
